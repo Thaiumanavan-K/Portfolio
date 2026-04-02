@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thaiumanavan K - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#">T<span class="name">HAIU. </span></a>
+                <ul>
+                    <li><a href="#header" class="current-page active-content" onclick="openSection()">Home</a></li>
+                    <li><a href="#about" class="current-page" onclick="openSection()">About</a></li>
+                    <li><a href="#project" class="current-page" onclick="openSection()">Projects</a></li>
+                    <li><a href="#contact" class="current-page" onclick="openSection()">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h2>Hello, It's Me</h2>
+                <h1><span class="name">Thaiumanavan</span>.</h1>
+                <h2>I'm a <span class="role">Software Developer</span></h2>
+                <h2>Developer building end-to-end applications with a focus on backend systems, clean logic, and
+                    real-world problem solving.</h2>
+            </div>
+            <div class="home-icon">
+                <a href="https://www.linkedin.com/in/thaiumanavan-k-6438133a3/?skipRedirect=true" target="_blank"><i
+                        class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/Thaiumanavan-K" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="abt-row">
+                <div class="col-1"><img class="abt-img" src="AbtImg.png" alt=""></div>
+                <div class="col-2">
+                    <div class="about-para">
+                        <h1 class="sub-title">About Me</h1>
+                        <p class="sub-para">Computer Science undergraduate focused on backend development using Java,
+                            with strong foundations in Data Structures, OOP, and database systems. I build scalable,
+                            logic-driven applications and actively strengthen problem-solving skills through consistent
+                            DSA practice. Seeking a Software Developer role to contribute to building efficient and
+                            impactful systems.</p>
+                    </div>
+                    <div class="about-factors">
+                        <p class="text-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="text-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="about-content active-content" id="skills">
+                        <ul>
+                            <li><span>Backend Development</span><br>Building structured systems and handling application
+                                logic</li>
+                            <li><span>Database Design</span><br>Designing efficient schemas and managing data using
+                                MySQL</li>
+                            <li><span>Web Development</span><br>Creating complete applications using Java and basic
+                                frontend technologies</li>
+                            <a class="btn btn2" href="my-resume.pdf" download>Download Resume</a>
+                        </ul>
+                    </div>
+                    <div class="about-content" id="education">
+                        <ul>
+                            <li><span>B. Tech CSE 2026</span><br>SRM Institute of Science & Technology Kattankulathur
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title proj-title">My Projects</h1>
+            <div class="proj-row">
+                <div class="proj-col">
+                    <img src="ProjImg1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Imagic Hub</h3>
+                        <p>Built a full-stack image management platform with secure authentication and session handling
+                            using Java Servlets and JDBC.</p>
+                        <a href="https://github.com/Thaiumanavan-K/Imagic-Hub" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="proj-col">
+                    <img src="ProjImg2.png" alt="">
+                    <div class="layer">
+                        <h3>Stocks DB</h3>
+                        <p>StocksDB is a web-based database management system for handling sales and purchase records. It provides secure admin authentication, structured MySQL tables, complex SQL queries, triggers, and interactive data visualization for analyzing business transactions.</p>
+                        <a href="https://github.com/Thaiumanavan-K/StocksDB" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="proj-col">
+                    <!-- <img src="ProjImg2.png" alt=""> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <span id="msg"></span>
+        <div class="container">
+            <div class="contact-row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p class="contact-form"><i class='bx bxl-whatsapp' style='color:#16a34a'></i> 7904262067</p>
+                    <p class="contact-form"><i class='bx bxl-gmail' style='color:#16a34a'></i><a
+                            href="mailto:thaiumanavank@gmail.com">thaiumanavank@gmail.com</a> </p>
+                    <div class="contact-icon">
+                        <a href="https://www.facebook.com/thaiumanavan.kamalapathi" class="social-link"
+                            target="_blank"><i class='bx bxl-facebook-square'></i></a>
+                        <a href="https://www.instagram.com/_.t_h_a_i_u._/" class="social-link" target="_blank"><i
+                                class='bx bxl-instagram-alt'></i> </a>
+                        <a href="https://x.com/simply58870" class="social-link" target="_blank"><i
+                                class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="Google-Form">
+                        <input type="text" name="Your Name" placeholder="Your Name" required>
+                        <input type="text" name="Your Gmail" placeholder="Your Gmail" required>
+                        <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

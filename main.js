@@ -27,6 +27,7 @@ function opentab(tabname){
 }
 
 var currentPages = document.getElementsByClassName("current-page");
+var sidemenu = document.getElementById("sidemenu");
 
 function openSection(){
     for(let currentPage of currentPages){
@@ -35,6 +36,15 @@ function openSection(){
     if (window.event && window.event.currentTarget) {
         window.event.currentTarget.classList.add("active-content");
     }
+    closemenu();
+}
+
+function openmenu(){
+    if (sidemenu) sidemenu.classList.add("open");
+}
+
+function closemenu(){
+    if (sidemenu) sidemenu.classList.remove("open");
 }
 
 

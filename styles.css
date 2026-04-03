@@ -407,3 +407,105 @@ form .btn{
     border-radius: 5px;
     padding: 10px 15px;
 }
+/* -------------responsive code------------ */
+nav .bx {
+    display: none;
+}
+
+@media only screen and (max-width: 900px){
+    nav a {
+        margin-left: 0;
+    }
+    .header-text {
+        margin-right: 0%;
+        margin-top: 25%;
+    }
+    .home-icon {
+        margin-right: 0%;
+    }
+    .col-1, .col-2 {
+        flex-basis: 100%;
+        padding: 0 10px;
+    }
+    .col-1 {
+        margin-bottom: 30px;
+    }
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+        padding: 0 10px;
+    }
+    .contact-left {
+        margin-bottom: 40px;
+    }
+    .proj-row, .proj-title {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .about-factors {
+        justify-content: center;
+    }
+    .btn2 {
+        margin-left: 0;
+        display: inline-block;
+        line-height: normal;
+        margin-top: 20px;
+        padding: 10px 20px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #header {
+        background-image: none;
+        background-color: #080808;
+    }
+    nav .bx {
+        display: block;
+        font-size: 35px;
+        cursor: pointer;
+        color: #16A34A;
+    }
+    nav ul {
+        background: rgba(8, 8, 8, 0.98);
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+        border-left: 1px solid #16A34A;
+    }
+    nav ul.open {
+        right: 0;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    nav ul .bx {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .container {
+        padding: 35px 5%;
+    }
+    .header-text h1 {
+        font-size: 35px;
+    }
+    .header-text h2 {
+        font-size: 18px;
+    }
+    .proj-row, .proj-title {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .text-links {
+        margin: 20px 15px;
+    }
+}
+    form .btn{
+        margin-left: 30%;
+    }
